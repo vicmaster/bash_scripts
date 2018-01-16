@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Simple note-taking script
+# Author: zazvick
+
+echo Hello, World!
+echo $(date) : $* >> notes.txt
