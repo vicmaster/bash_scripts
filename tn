@@ -2,6 +2,7 @@
 
 # Simple note-taking script
 # Author: zazvick
+# Documentation: http://www.tldp.org/LDP/intro-linux/html/sect_03_04.html
 
 echo Hello, World!
 echo $(date) : $* >> notes.txt
