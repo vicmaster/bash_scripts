@@ -54,3 +54,37 @@ $ type bar
 -bash: type: bar: not found
 Victors-MacBook-Pro-2@zazvick: ~/Projects/personal/training/bash-scripts (master)
 ```
+
+Recap:
+
+```
+Shell Script
+
+- A file containing commands
+- Executed by your shell
+
+Naming your scripts
+
+Don’t forget to set permissions
+
+- chmod u+w
+
+Shebang
+ 
+- First line
+- #!/bin/bash
+
+Use comments
+
+- Comments start with #
+
+Add script to your PATH
+
+- ./tn
+- /home/zazvick/tn
+- Tip: make a bin folder in your home
+- PATH=“$PATH:~/bin”
+
+Or call it with a full pathname
+
+```
