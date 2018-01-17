@@ -99,3 +99,55 @@ Or call it with a full pathname
 * Variable Names
 
 * Good habits when using variables
+
+```
+Victors-MacBook-Pro-2@zazvick: ~/Projects/personal/training/bash-scripts (master)
+$ greeting="hello"
+Victors-MacBook-Pro-2@zazvick: ~/Projects/personal/training/bash-scripts (master)
+$ $greeting
+-bash: hello: command not found
+Victors-MacBook-Pro-2@zazvick: ~/Projects/personal/training/bash-scripts (master)
+$ echo $greeting
+hello
+Victors-MacBook-Pro-2@zazvick: ~/Projects/personal/training/bash-scripts (master)
+$ filename="somefile.txt"
+Victors-MacBook-Pro-2@zazvick: ~/Projects/personal/training/bash-scripts (master)
+$ touch $filename
+Victors-MacBook-Pro-2@zazvick: ~/Projects/personal/training/bash-scripts (master)
+$ ls
+notes.txt    readme.md    somefile.txt tn
+Victors-MacBook-Pro-2@zazvick: ~/Projects/personal/training/bash-scripts (master)
+$ files="file1 file2"
+Victors-MacBook-Pro-2@zazvick: ~/Projects/personal/training/bash-scripts (master)
+$ touch $files
+Victors-MacBook-Pro-2@zazvick: ~/Projects/personal/training/bash-scripts (master)
+$ ls -l files
+ls: files: No such file or directory
+Victors-MacBook-Pro-2@zazvick: ~/Projects/personal/training/bash-scripts (master)
+$ ls -l $files
+-rw-r--r--  1 zazvick  staff  0 Jan 16 23:49 file1
+-rw-r--r--  1 zazvick  staff  0 Jan 16 23:49 file2
+Victors-MacBook-Pro-2@zazvick: ~/Projects/personal/training/bash-scripts (master)
+$ echo $greeting, $USER
+hello, zazvick
+Victors-MacBook-Pro-2@zazvick: ~/Projects/personal/training/bash-scripts (master)
+$ echo $greeting, $user
+hello,
+Victors-MacBook-Pro-2@zazvick: ~/Projects/personal/training/bash-scripts (master)
+$ usergreeting="$greeting, $USER"
+Victors-MacBook-Pro-2@zazvick: ~/Projects/personal/training/bash-scripts (master)
+$ echo $usergreeting
+hello, zazvick
+Victors-MacBook-Pro-2@zazvick: ~/Projects/personal/training/bash-scripts (master)
+$ x = 5
+-bash: x: command not found
+Victors-MacBook-Pro-2@zazvick: ~/Projects/personal/training/bash-scripts (master)
+$ x=5
+Victors-MacBook-Pro-2@zazvick: ~/Projects/personal/training/bash-scripts (master)
+$ $x
+-bash: 5: command not found
+Victors-MacBook-Pro-2@zazvick: ~/Projects/personal/training/bash-scripts (master)
+$ echo $x
+5
+Victors-MacBook-Pro-2@zazvick: ~/Projects/personal/training/bash-scripts (master)
+```
