@@ -1,3 +1,5 @@
 Tue Jan 16 01:28:22 CST 2018 : test
 Tue Jan 16 01:28:36 CST 2018 : working
 Tue Jan 16 23:28:43 CST 2018 : hello
+Wed Jan 17 00:07:12 CST 2018 : My friend
+Wed Jan 17 00:12:04 CST 2018 : Work harder!

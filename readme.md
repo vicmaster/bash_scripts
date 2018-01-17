@@ -151,3 +151,73 @@ $ echo $x
 5
 Victors-MacBook-Pro-2@zazvick: ~/Projects/personal/training/bash-scripts (master)
 ```
+
+* Used to store data by name
+* To create: just assign a value
+  - x=10
+  - If x already existed, it is assigned the new value
+  - filenames="notes.txt picture.jpg movie.mov"
+  - Values containing spaces: use quotes
+  - Don't use white space around =
+* To get the value
+  - Prefix with $
+  - echo $x
+* Bash variables have no type
+  - Basically just store a string
+* Names:
+  - Only letters, numbers, and underscore are allowed
+  - First character should be a letter or an underscore
+  - Variable names are case-sensitive
+
+* Upercase variables:
+ - Bash has many pre-defined variables
+ - PATH, HOME, SECONDS, IFS, etc.
+ - You don't want to override them by mistake
+
+* Good Habit:
+ - Use lowercase names for your variables
+
+* Good habit: surround your variables with quotes
+ - Use "$x" instead of $x
+ - Prevent surprises when it contains spaces
+ - User double quotes: keep meaning of dollar sign intact
+
+* Braces
+ - Where does your variable name end?
+ - echo "${foo}bar"
+ - prints value of var "foo" followed by string "bar"
+ echo "$foobar" prints value of "foobar"
+ - Using braces a lot is a Good Habit
+
+* Another good habit
+ - use $HOME instead of ~
+
+* read
+ - Reads a line of input into variable
+ - read var
+ - Is a shell builtin
+ - "help read"
+ - "man builtins"
+ - read -p "Type your name:" name
+
+ * Debugging
+
+  - user -x
+  - set -x : set options to bash
+  - set + x
+
+* Summary
+ - Variables
+   - Assign value
+   - Get value ($)
+   - No whitespace around=
+* Variables
+  - Quotes
+  - Braces
+* Reading input
+  - read
+* Debugging
+  - Use -x option in hashbang line
+  - Or use "set-x" to enable and "set +x" to disable
+
+
