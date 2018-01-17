@@ -88,3 +88,14 @@ Add script to your PATH
 Or call it with a full pathname
 
 ```
+
+### Variables
+
+* Variables
+  - Create
+  - Assign value
+  - Use value
+
+* Variable Names
+
+* Good habits when using variables
